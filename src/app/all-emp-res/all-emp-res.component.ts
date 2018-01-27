@@ -12,7 +12,7 @@ export class AllEmpResComponent implements OnInit {
     private http: HttpClient
   ) { }
   pageTitle: string = "All Employee Resources";
-  private allItems;
+  private allItems: any;
   ngOnInit(): void {
     this.http.get('http://18.217.102.53:8080/team2-service-webapp/api/AllEmployeeResources')
       .subscribe(data => {

@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AllEmpResComponent} from './all-emp-res/all-emp-res.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/all', pathMatch: 'full' },
-  { path: 'all', component: AllEmpResComponent }
+  { path: '', component: AllEmpResComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
