@@ -1,5 +1,5 @@
 # Team 2 - Client App
-[View it live]()
+[View it live](http://team2-client.s3-website.us-east-2.amazonaws.com/)
 
 ## Goals
   + Front-end development with Angular 
