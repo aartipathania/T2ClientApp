@@ -5,12 +5,13 @@
 <hr>
 <div class="container-fluid">
   <div class="container">
+
     <h4>
       {{ pageTitle }}
     </h4>
   </div>
 </div>
-<div ng-app="myApp" class="container" id="read-emp-profie">
+<div class="container" id="read-emp-profie">
   <div class="row">
     <div class="col-md-12">
       <table class="table">
@@ -22,12 +23,10 @@
           <th class="col-md-3">Department</th>
         </tr>
         </thead>
-        <tbody ng-controller="MyCtrl">
+        <tbody>
         <tr *ngFor="let item of allItems" class="row">
           <td class="col-md-3"> {{ item.empEmail }} </td>
-          <td class="col-md-3">
-            <a routerLink='/user/{{ item._id }}'>{{ item.empName }}</a>
-          </td>
+          <td class="col-md-3">{{ item.empName }}</td>
           <td class="col-md-3"> {{ item.salary }} </td>
           <td class="col-md-3"> {{ item.department }} </td>
         </tr>
@@ -36,3 +35,4 @@
     </div>
   </div>
 </div>
+
